@@ -13,7 +13,7 @@
   
   <meta property="og:image" content="images/cover.png" />
   <meta property="og:description" content="At the end of section 3 of James Bannerman’s Church of Christ is this masterful section on the sacraments." />
-  <meta name="github-repo" content="ldweeks/bannerman-sacraments" />
+  <meta name="github-repo" content="warhornmedia/bannerman-sacraments" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Chapter 2 The Sacrament Of Baptism | The Sacraments" />
@@ -468,6 +468,46 @@ k2MDk4MCwxNDA2NTYwMjk5LDE3ODIzNjUyN119
 --><a href="the-sacrament-of-baptism.html#fnref133" class="footnote-back">↩</a></p></li>
 </ol>
 </div>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+
+  <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+  <script>
+    var currentLocation = window.location.href;    window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+    formbutton("create", {
+      action: "https://formspree.io/xgendgzo",
+      theme: "classic",
+      buttonImg: "<i class='fas fa-exclamation' style='font-size:24px'/>",
+      title: "Report a problem!",
+      description: "Please report any typos in the book or problems with the page.",
+      fields: [{
+        name: "url",
+		type: "hidden", 
+		label: null,
+		value: currentLocation
+	  },
+	  {       
+        name: "name",
+        type: "text",
+        label: "Your Name",
+        required: true
+      },
+      {
+        name: "email",
+        type: "email",
+        label: "Your Email",
+        required: true
+      },
+      {
+        name: "message",
+        type: "textarea",
+        label: "Text with problem",
+        value: "(If reporting a typo, please copy the whole sentence with the typo and paste it here, and tell us what you think the corrected text should be.)"
+      },
+      {
+        type: "submit"
+      }],
+    });
+  </script>
             </section>
 
           </div>
@@ -501,7 +541,7 @@ gitbook.start({
 },
 "fontsettings": {
 "theme": "white",
-"family": "sans",
+"family": "serif",
 "size": 2
 },
 "edit": {
@@ -518,10 +558,8 @@ gitbook.start({
 },
 "download": ["Bannerman-Sacraments.pdf", "Bannerman-Sacraments.epub"],
 "toc": {
-"collapse": "subsection"
-},
-"includes": {
-"after_body": "feedback.html"
+"collapse": "subsection",
+"scroll_highlight": true
 }
 });
 });
