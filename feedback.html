@@ -12,8 +12,8 @@
       fields: [{
         name: "url",
 		type: "hidden", 
-		value: currentLocation,
-		style: "visibility: hidden;"
+		label: null,
+		value: currentLocation
 	  },
 	  {       
         name: "name",
@@ -28,15 +28,10 @@
         required: true
       },
       {
-        name: "problemText",
+        name: "message",
         type: "textarea",
         label: "Text with problem",
-        value: "(Please copy from book and paste here.)"
-      },
-      {
-        name: "fixedText",
-        type: "textarea",
-        label: "Corrected text"
+        value: "(If reporting a typo, please copy the whole sentence with the typo and paste it here, and tell us what you think the corrected text should be.)"
       },
       {
         type: "submit"

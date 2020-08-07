@@ -7,14 +7,11 @@ output:
   bookdown::gitbook:
     config:
       toc:
-        collapse: subsection
         scroll_highlight: yes
       fontsettings:
         theme: white
         family: serif
         size: 2
-    split_by: section+number
-    highlight: tango
     includes:
       after_body: feedback.html
 always_allow_html: yes
