@@ -185,10 +185,44 @@
 <p>And what shall we say of those Church systems, Romanist and semi-Romanist, that give to mortal men that office of Priest which none can bear but the Son of God, and constitute sinners mediators on earth between their fellow-sinners and the Almighty? Such an encroachment upon His incommunicable office touches very nearly the honour of Christ. The assumption by men of His personal and inalienable prerogatives, inseparable from Himself as Mediator, is a dishonour done to Him in that very character in which He stands forth supreme and alone before the eyes of the universe. The very title of Mediator belongs in the Christian Church to none but One, and He the only-begotten Son of the Father. Our lips are now forbidden to name another Priest but Jesus. Even in the Old Testament Church, the name and the office of the Priest had something in them of awful and mysterious import, typical as they were of the fulness of the Gospel day, and of the greatness of the Gospel Mediator, and fenced about, as we know them to have been, with the solemn and irrevocable sentence of death upon those who should unwarrantably assume or encroach upon them. And still more awful are that name and office of Priest, now that in these latter days they have been sustained by the Son of God Incarnate, and mysteriously sanctified by the shedding of that more than mortal blood which was poured out on Calvary, and which He still day by day presents in heaven, as He continually pleads with the Father there. To stand between God and man, as Christ once stood amid the darkness of Calvary, was a work which none but He could do. To stand between God and man, as Christ now stands, a Priest in heaven no less than on earth, is a work which none but He can accomplish. To bear the burden of such an office now is as little competent to mortal man as it was to bear the burden of it in the Garden, or at the Cross. The name of Priest between God and man is Christ’s inalienable and incommunicable name,—whether He bears the anger of an offended Judge, or pleads with the compassion of a reconciled Father,—whether He makes, as He once did, atonement by sacrifice, or makes, as He now does, intercession by prayer. It is the sin above others of the Church of Rome, that it has assumed to itself that name of Priest, which none in heaven or in earth is worthy to bear but the Son of God, and that its ministers pretend to stand between the creature and the Creator in the exercise of His priestly office among men.</p>
 </div>
 </div>
+  // load cloudflare icons
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+
   <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
   <script>
     window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
-    formbutton("create", {action: "https://formspree.io/xgendgzo"})
+    formbutton("create", {
+      fields: [{
+        name: "name",
+        type: "text",
+        label: "Your Name",
+        required: true,
+      },
+      {
+        name: "email",
+        type: "email",
+        label: "Your Email",
+        required: true
+      },
+      {
+        name: "problemText",
+        type: "textarea",
+        label: "Text with problem"
+        value: "(Please copy from book and paste here.)"
+      },
+      {
+        name: "fixedText",
+        type: "textarea",
+        label: "Corrected text"
+      },
+      {
+        type: "submit"
+      }],
+
+    buttonImg: "<i class='fas fa-comment' style='font-size:24px'/>"  // <-- new button icon
+
+    action: "https://formspree.io/xgendgzo"})
+    
   </script>
             </section>
 

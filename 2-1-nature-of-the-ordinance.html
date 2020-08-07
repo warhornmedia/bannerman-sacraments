@@ -202,10 +202,44 @@
 <li id="fn50"><p>Williams, <em>Antipaedobaptism Examined</em>, Shrewsbury 1789, vol. i. pp. 102-111, 121-171, 180-197. Halley, <em>The Sacraments</em>, Lond. 1844, vol. i. pp. 213-283. Goode, <em>Doct. of the Church of Engl. as to the Effects of Baptism in the case of Infants</em>, 2d ed. Lond. 1850, pp. 9-37, 143-178. [Calvin, <em>Inst</em>. lib. iv. cap. xv. Turrettin, <em>Op</em>. tom, iii. loc. xix. qu. 11-13, 19. Bp. E. H. Browne, <em>Expos. of the Thirty-nine Art</em>. 8th ed. Lond. 1868, pp. 612-671. Martensen, <em>Dogmatik</em>, 4te Aufl. pp. 367-370. Thomasius, <em>Dogmatik</em>, 3te Th. 2te Abth. Erlangen 1861, pp. 6-10, 22-25. Cunningham, <em>Works</em>, vol. iii. pp. 133-142. Goode, <em>Vind. of the ’Def of the XXXIX Art., etc</em>.,’ in reply to the Bishop of Exeter, 2d ed. pp. 8-22.]<a href="2-1-nature-of-the-ordinance.html#fnref50" class="footnote-back">↩</a></p></li>
 </ol>
 </div>
+  // load cloudflare icons
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+
   <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
   <script>
     window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
-    formbutton("create", {action: "https://formspree.io/xgendgzo"})
+    formbutton("create", {
+      fields: [{
+        name: "name",
+        type: "text",
+        label: "Your Name",
+        required: true,
+      },
+      {
+        name: "email",
+        type: "email",
+        label: "Your Email",
+        required: true
+      },
+      {
+        name: "problemText",
+        type: "textarea",
+        label: "Text with problem"
+        value: "(Please copy from book and paste here.)"
+      },
+      {
+        name: "fixedText",
+        type: "textarea",
+        label: "Corrected text"
+      },
+      {
+        type: "submit"
+      }],
+
+    buttonImg: "<i class='fas fa-comment' style='font-size:24px'/>"  // <-- new button icon
+
+    action: "https://formspree.io/xgendgzo"})
+    
   </script>
             </section>
 

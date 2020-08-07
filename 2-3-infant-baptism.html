@@ -255,10 +255,44 @@
 <li id="fn101"><p>Williams, <em>Antipaed. Exam</em>. Shrewsb. 1789, vol. i. pp. 199-232. Wilson, <em>Inf. Baptism</em>, Lond. 1848, pp. 517-523. Wardlaw, <em>Dissert. on Inf. Baptism</em>, 3d ed. pp. 102-130. [Apollonii, <em>Consideratio</em>, Lond. 1644, pp. 99-105. Hoornbeek, <em>Epistola de Independentismo</em>, Lugdun. Batav. 1660, pp. 313-350. Owen, <em>Works</em>, Goold’s ed., vol. xvi. pp. 258-268. Gillespie, <em>Miscell. Quest</em>. chap, xvii.]<a href="2-3-infant-baptism.html#fnref101" class="footnote-back">↩</a></p></li>
 </ol>
 </div>
+  // load cloudflare icons
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+
   <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
   <script>
     window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
-    formbutton("create", {action: "https://formspree.io/xgendgzo"})
+    formbutton("create", {
+      fields: [{
+        name: "name",
+        type: "text",
+        label: "Your Name",
+        required: true,
+      },
+      {
+        name: "email",
+        type: "email",
+        label: "Your Email",
+        required: true
+      },
+      {
+        name: "problemText",
+        type: "textarea",
+        label: "Text with problem"
+        value: "(Please copy from book and paste here.)"
+      },
+      {
+        name: "fixedText",
+        type: "textarea",
+        label: "Corrected text"
+      },
+      {
+        type: "submit"
+      }],
+
+    buttonImg: "<i class='fas fa-comment' style='font-size:24px'/>"  // <-- new button icon
+
+    action: "https://formspree.io/xgendgzo"})
+    
   </script>
             </section>
 
