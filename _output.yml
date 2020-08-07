@@ -1,6 +1,8 @@
 bookdown::gitbook:
   css: style.css
   config:
+    includes: 
+        after_body: feedback.html
     toc:
       before: |
         <li><a href="https://www.warhornmedia.com/"><img src="images/warhornlogo.png" width="260"></a></li>
