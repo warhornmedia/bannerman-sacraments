@@ -42,6 +42,8 @@ God bless,
 
 —The Warhorn Team
 
+Original scanned images of this book are available in two places for proofreading or checking for errors: [Archive.org](https://archive.org/details/churchofchristtr02bann/page/n11/mode/2up) and [Google Books](https://www.google.com/books/edition/_/Z_BBAAAAYAAJ?hl=en&gbpv=0).
+
 #### Cover {-}
 ```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://www.warhornmedia.com'}
 knitr::include_graphics('images/cover.png', dpi = NA)
