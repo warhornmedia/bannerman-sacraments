@@ -31,3 +31,49 @@ pre code {
 .book .book-body .page-wrapper .page-inner section.normal h4, .book .book-body .page-wrapper .page-inner section.normal h5, .book .book-body .page-wrapper .page-inner section.normal h6 {
   font-size:1em
 }
+
+ /* Restart footnote numbers for each section. Following trail of solution to request asked here: https://community.rstudio.com/t/restart-footnote-numbering-in-each-chaptering/75628/4
+*/
+
+  /* don't show the wrong footnote calls */
+  .footnote-ref sup,
+  .footnoteRef sup {
+    display: none;
+  }
+
+  /* use a counter for footnote calls */
+  .page-inner {
+    counter-reset: fn-call;
+  }
+
+  .footnote-ref,
+  .footnoteRef {
+    counter-increment: fn-call;
+  }
+
+  /* generate new footnote calls */
+  .footnote-ref::after,
+  .footnoteRef::after {
+    content: counter(fn-call);
+    position: relative;
+    top: -.5em;
+    font-size: 85%;
+    line-height: 0;
+    vertical-align: baseline;
+  }
+
+  /* use a counter for footnotes numbering */
+  .footnotes ol {
+    list-style: none;
+    counter-reset: fn-number;
+  }
+
+  .footnotes li {
+    counter-increment: fn-number;
+  }
+
+  .footnotes p::before {
+    content: counter(fn-number) '. ';
+  }
+  
+/* end Restart footnote numbers for each section. */
