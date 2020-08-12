@@ -179,6 +179,18 @@ Making historical books available for free online in high quality, readable form
 <p><a href="https://www.warhornmedia.com" target="_blank"><img src="images/cover.png" style="display: block; margin: auto;" /></a></p>
 </div>
 </div>
+<script> 
+ 	 var refTagger = {
+ 	 	 settings: { 
+ 	 	 	 bibleVersion: "ESV"   
+ 	 	 }  
+ 	 }; 
+ 	 (function(d, t) { 
+ 	 	 var g = d.createElement(t), s = d.getElementsByTagName(t)[0]; 
+ 	 	 g.src = '//api.reftagger.com/v2/RefTagger.js'; 
+ 	 	 s.parentNode.insertBefore(g, s); 
+ 	 }(document, 'script')); 
+</script>
             </section>
 
           </div>
@@ -231,9 +243,6 @@ gitbook.start({
 "toc": {
 "collapse": "subsection",
 "scroll_highlight": true
-},
-"includes": {
-"after_body": "reftagger.html"
 }
 });
 });
