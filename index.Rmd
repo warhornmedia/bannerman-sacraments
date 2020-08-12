@@ -12,6 +12,8 @@ output:
         theme: white
         family: serif
         size: 2
+      includes:
+        after_body: reftagger.html
 always_allow_html: yes
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -20,9 +22,6 @@ link-citations: yes
 github-repo: warhornmedia/bannerman-sacraments
 description: "At the end of section 3 of James Bannerman's *Church of Christ* is this masterful section on the sacraments."
 cover-image: "images/cover.png"
-mainfont: LiberationSerif
-monofont: LiberationSerif
-monofontoptions: "Scale=0.7"
 ---
 
 # [A Warhorn Historicals Book](https://historicals.warhornmedia.com/) {-}
