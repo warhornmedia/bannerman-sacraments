@@ -8,7 +8,7 @@ body {
 
 p {
   font-family: calluna, serif;
-  font-weight: 600;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -28,6 +28,9 @@ pre code {
 }
 
 .book .book-body .page-wrapper .page-inner section.normal h1 {
+  font-family: calluna, serif;
+  font-weight: 400;
+  font-style: normal;
   font-variant-caps: small-caps;
   -moz-font-feature-settings: "smcp";
   -webkit-font-feature-settings: "smcp";
@@ -36,17 +39,24 @@ pre code {
 }
 
 .book .book-body .page-wrapper .page-inner section.normal h2 {
+  font-family: calluna, serif;
+  font-weight: 700;
+  font-style: normal;
   font-size:1em;
 }
 
 .book .book-body .page-wrapper .page-inner section.normal h3 {
+  font-family: calluna, serif;
+  font-weight: 400;
+  font-style: italic;
   font-size:1em;
-  font-style:italic;
-  font-weight:normal;
 }
 
 .book .book-body .page-wrapper .page-inner section.normal h4, .book .book-body .page-wrapper .page-inner section.normal h5, .book .book-body .page-wrapper .page-inner section.normal h6 {
-  font-size:1em
+  font-family: calluna, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
 }
 
  /* Restart footnote numbers for each section. Following trail of solution to request asked here: https://community.rstudio.com/t/restart-footnote-numbering-in-each-chaptering/75628/4
