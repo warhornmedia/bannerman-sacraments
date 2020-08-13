@@ -10,6 +10,10 @@ p {
   font-family: calluna, serif;
   font-weight: 400;
   font-style: normal;
+  font-variant-ligatures: common-ligatures;
+  -moz-font-feature-settings: "liga", "clig";
+  -webkit-font-feature-settings: "liga", "clig";
+  font-feature-settings: "liga", "clig";
 }
 
 p.caption {
@@ -31,7 +35,7 @@ pre code {
   font-family: calluna, serif;
   font-weight: 400;
   font-style: normal;
-  font-variant-caps: small-caps;
+  font-variant-caps: all-small-caps;
   -moz-font-feature-settings: "smcp";
   -webkit-font-feature-settings: "smcp";
   font-feature-settings: "smcp";
