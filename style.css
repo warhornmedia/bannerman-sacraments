@@ -1,8 +1,9 @@
 @import url("https://use.typekit.net/uix0fgg.css");
 
 body {
-  font-family: "calluna", serif;
+  font-family: calluna, serif;
   font-weight: 400;
+  font-style: normal;
 }
 
 p.caption {
