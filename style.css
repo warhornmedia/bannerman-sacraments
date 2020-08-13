@@ -16,6 +16,12 @@ p {
   font-feature-settings: "liga", "clig";
 }
 
+.header-section-number {
+  display: block;
+  font-size: .8em;
+  padding-right: 0em;
+}
+
 p.caption {
   color: #777;
   margin-top: 10px;
@@ -31,7 +37,7 @@ pre code {
   white-space: inherit;
 }
 
-.book .book-body .page-wrapper .page-inner section.normal h1 {
+h1 {
   font-family: calluna, serif;
   font-weight: 400;
   font-style: normal;
@@ -40,23 +46,26 @@ pre code {
   -webkit-font-feature-settings: "smcp";
   font-feature-settings: "smcp";
   letter-spacing:.1em;
+  border-bottom: 2px solid #bf2932;
+  line-height: 1em;
+  padding-bottom: .5em;
 }
 
-.book .book-body .page-wrapper .page-inner section.normal h2 {
+h2 {
   font-family: calluna, serif;
   font-weight: 700;
   font-style: normal;
   font-size:1em;
 }
 
-.book .book-body .page-wrapper .page-inner section.normal h3 {
+h3 {
   font-family: calluna, serif;
   font-weight: 400;
   font-style: italic;
   font-size:1em;
 }
 
-.book .book-body .page-wrapper .page-inner section.normal h4, .book .book-body .page-wrapper .page-inner section.normal h5, .book .book-body .page-wrapper .page-inner section.normal h6 {
+h6 {
   font-family: calluna, serif;
   font-weight: 400;
   font-style: normal;
