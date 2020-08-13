@@ -22,6 +22,14 @@ p + p {
   text-indent: 1.5em;
 }
 
+h1 + p::first-line {
+  font-variant-caps: all-small-caps;
+  -moz-font-feature-settings: "smcp";
+  -webkit-font-feature-settings: "smcp";
+  font-feature-settings: "smcp";
+  letter-spacing:.1em;
+}
+
 .header-section-number {
   display: block;
   font-size: .8em;
