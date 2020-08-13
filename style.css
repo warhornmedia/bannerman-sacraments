@@ -30,7 +30,7 @@ h1 + p::first-line {
   letter-spacing:.1em;
 }
 
-.header-section-number {
+h1 > .header-section-number {
   display: block;
   font-size: .8em;
   padding-right: 0em;
