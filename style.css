@@ -18,7 +18,7 @@ body {
   margin-bottom: 0em;
 }
 
-p + p {
+p + p, h3 + p {
   text-indent: 5%;
 }
 
@@ -70,7 +70,7 @@ pre code {
   font-feature-settings: "smcp";
   */
   letter-spacing:.1em;
-  border-bottom: 2px solid #bf2932;
+  border-bottom: 2px solid darkred;
   line-height: 1em;
   padding-bottom: .5em;
 }
@@ -87,6 +87,17 @@ pre code {
   font-weight: 400;
   font-style: italic;
   font-size: 1em;
+  margin-bottom: 0em;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal h3::before {
+  content: "—";
+    color: darkred;
+    font-weight: 900;
+    display: block;
+    text-align: center;
+    transform: scale(4,1);
+    margin-bottom:1em;
 }
 
  /* Restart footnote numbers for each section. Following trail of solution to request asked here: https://community.rstudio.com/t/restart-footnote-numbering-in-each-chaptering/75628/4
