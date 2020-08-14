@@ -6,7 +6,7 @@ body {
   font-style: normal;
 }
 
-p {
+.book .book-body .page-wrapper .page-inner section.normal p {
   font-family: calluna, serif;
   font-weight: 400;
   font-style: normal;
@@ -22,16 +22,18 @@ p + p {
   text-indent: 5%;
 }
 
-/* styled first line of opening para; not sure all-small-caps is really supported in all browsers: causes overflow problems…
-
 h1 + p::first-line {
+  /* all small caps workaround */
+  text-transform: lowercase;
+  font-variant: small-caps;
+  /* actual opentype all small caps code:
   font-variant-caps: all-small-caps;
   -moz-font-feature-settings: "smcp";
   -webkit-font-feature-settings: "smcp";
   font-feature-settings: "smcp";
+  */
   letter-spacing:.1em;
 }
-*/
 
 h1 > .header-section-number {
   display: block;
