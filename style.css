@@ -90,6 +90,7 @@ pre code {
   margin-bottom: 0em;
 }
 
+/* Rule separating subheads; issue: also puts rule directly between h2 and h3—could probably be solved by proper use of descendant selectors...
 .book .book-body .page-wrapper .page-inner section.normal h3::before {
   content: "—";
     color: darkred;
@@ -99,6 +100,7 @@ pre code {
     transform: scale(4,1);
     margin-bottom:1em;
 }
+*/
 
  /* Restart footnote numbers for each section. Following trail of solution to request asked here: https://community.rstudio.com/t/restart-footnote-numbering-in-each-chaptering/75628/4
 */
