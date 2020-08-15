@@ -66,6 +66,10 @@ pre code {
   font-family: calluna, serif;
   font-weight: 400;
   font-style: normal;
+  text-wrap: balanced;
+  border-bottom: 2px solid darkred;
+  line-height: 1.2em;
+  padding-bottom: .5em;
   /* all small caps workaround
   text-transform: lowercase;
   font-variant: small-caps;
@@ -77,9 +81,6 @@ pre code {
   font-feature-settings: "smcp";
   */
   /*letter-spacing:.1em;*/
-  border-bottom: 2px solid darkred;
-  line-height: 1.2em;
-  padding-bottom: .5em;
 }
 
 .book .book-body .page-wrapper .page-inner section.normal h2 {
