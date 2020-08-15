@@ -43,7 +43,7 @@ h1 > .header-section-number {
   font-family: calluna-sans, sans-serif;
   text-transform: lowercase;
   font-variant: small-caps;
-  letter-spacing: .1em;
+  /*letter-spacing: .1em;*/
   color: darkred;
 }
 
