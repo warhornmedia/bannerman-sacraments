@@ -38,6 +38,11 @@ li.chapter b {
 
 .book .book-summary ul.summary li a:hover, .book .book-summary ul.summary li.active>a {
 	color: #1aa9ab;
+	/*font-weight: 600;*/
+}
+
+.book .book-body .page-wrapper .page-inner section.normal a {
+	color: #1aa9ab;
 }
 
 /*
