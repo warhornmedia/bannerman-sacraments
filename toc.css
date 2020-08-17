@@ -1,3 +1,9 @@
+body {
+	font-family: calluna-sans, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
 #TOC ul,
 #TOC li,
 #TOC span,
