@@ -93,9 +93,26 @@ h1 > .header-section-number {
 }
 
 h2 > .header-section-number {
-  display: block;
-  font-size: .67em;
-  padding-right: 0em;
+	display: block;
+	padding-right: 0em;
+	font-weight: normal;
+	/*all small caps*/
+  	text-transform: lowercase;
+  	font-variant: small-caps;
+  	font-variant-caps: all-small-caps;
+  	-moz-font-feature-settings: "smcp";
+  	-webkit-font-feature-settings: "smcp";
+  	font-feature-settings: "smcp";
+  	letter-spacing:.1em;
+}
+
+h2 > .header-section-number::before {
+	content: "Section ";
+}
+
+h3 > .header-section-number {
+  font-style: normal;
+  font-weight: 600;
 }
 
 .book .book-body .page-wrapper .page-inner section.normal h2 {
