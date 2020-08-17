@@ -1,6 +1,6 @@
 @import url("https://use.typekit.net/uix0fgg.css");
 
-.book .book-body * {
+.book .book-body p, .book .book-body h1, .book .book-body h2, .book .book-body h3, .book .book-body h4, .book .book-body h5, .book .book-body h6, .book .book-body ul, .book .book-body li, .book .book-body blockquote {
 	font-family: calluna, serif;
 	font-weight: 400;
 	font-style: normal;
@@ -22,7 +22,7 @@
 }
 
 p + p, h3 + p {
-  text-indent: 4%;
+  text-indent: 1.2em;
 }
 
 /*
