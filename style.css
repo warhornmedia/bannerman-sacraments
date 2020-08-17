@@ -28,12 +28,16 @@ p + p, h3 + p {
   text-indent: 1.2em;
 }
 
-b {
+li.chapter b {
   	font-variant-numeric: lining-nums;
  	-moz-font-feature-settings: "lnum";
  	-webkit-font-feature-settings: "lnum";
  	font-feature-settings: "lnum";
-	color: darkred;
+	color: #3f5061;
+}
+
+.book .book-summary ul.summary li a:hover, .book .book-summary ul.summary li.active>a {
+	color: #1aa9ab;
 }
 
 /*
@@ -58,7 +62,7 @@ h1 > .header-section-number {
   text-transform: lowercase;
   font-variant: small-caps;
   letter-spacing: .1em;
-  /*color: darkred;*/
+  /*color: #3f5061;*/
 }
 
 p.caption {
@@ -78,7 +82,7 @@ pre code {
 
 .book .book-body .page-wrapper .page-inner section.normal h1 {
   text-wrap: balanced;
-  border-bottom: 2px solid darkred;
+  border-bottom: 2px solid #1aa9ab;
   line-height: 1.2em;
   padding-bottom: .5em;
   /* all small caps workaround
@@ -108,7 +112,7 @@ pre code {
 /* Rule separating subheads; issue: also puts rule directly between h2 and h3—could probably be solved by proper use of descendant selectors...
 .book .book-body .page-wrapper .page-inner section.normal h3::before {
   content: "—";
-    color: darkred;
+    color: #3f5061;
     font-weight: 900;
     display: block;
     text-align: center;
