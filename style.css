@@ -1,6 +1,6 @@
 @import url("https://use.typekit.net/uix0fgg.css");
 
-.book .book-body .page-wrapper .page-inner section.normal {
+.book .book-body .page-wrapper .page-inner section.normal p, .book .book-body .page-wrapper .page-inner section.normal h1, .book .book-body .page-wrapper .page-inner section.normal h2, .book .book-body .page-wrapper .page-inner section.normal h3, .book .book-body .page-wrapper .page-inner section.normal h4, .book .book-body .page-wrapper .page-inner section.normal h5, .book .book-body .page-wrapper .page-inner section.normal h6, .book .book-body .page-wrapper .page-inner section.normal ul, .book .book-body .page-wrapper .page-inner section.normal ol, .book .book-body .page-wrapper .page-inner section.normal li, .book .book-body .page-wrapper .page-inner section.normal blockquote {
 	font-family: calluna, serif;
 	font-weight: 400;
 	font-style: normal;
@@ -79,10 +79,11 @@ pre code {
   /*all small caps*/
   text-transform: lowercase;
   font-variant: small-caps;
-  font-variant-caps: all-small-caps;
+  /*opentype asc*/
+  /*font-variant-caps: all-small-caps;
   -moz-font-feature-settings: "smcp";
   -webkit-font-feature-settings: "smcp";
-  font-feature-settings: "smcp";
+  font-feature-settings: "smcp";*/
   letter-spacing:.1em;
 }
 
@@ -99,10 +100,11 @@ h2 > .header-section-number {
 	/*all small caps*/
   	text-transform: lowercase;
   	font-variant: small-caps;
-  	font-variant-caps: all-small-caps;
-  	-moz-font-feature-settings: "smcp";
-  	-webkit-font-feature-settings: "smcp";
-  	font-feature-settings: "smcp";
+  	/*opentype asc*/
+    /*font-variant-caps: all-small-caps;
+    -moz-font-feature-settings: "smcp";
+    -webkit-font-feature-settings: "smcp";
+    font-feature-settings: "smcp";*/
   	letter-spacing:.1em;
 }
 
