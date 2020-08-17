@@ -1,15 +1,18 @@
 @import url("https://use.typekit.net/uix0fgg.css");
 
-body {
-  font-family: arno-pro, serif;
-  font-weight: 400;
-  font-style: normal;
+.book .book-body * {
+	font-family: calluna, serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.book .book-summary * {
+	font-family: calluna, serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 .book .book-body .page-wrapper .page-inner section.normal p {
-  font-family: arno-pro, serif;
-  font-weight: 400;
-  font-style: normal;
   font-variant-ligatures: common-ligatures;
   -moz-font-feature-settings: "liga", "clig";
   -webkit-font-feature-settings: "liga", "clig";
@@ -63,9 +66,6 @@ pre code {
 }
 
 .book .book-body .page-wrapper .page-inner section.normal h1 {
-  font-family: arno-pro, serif;
-  font-weight: 400;
-  font-style: normal;
   text-wrap: balanced;
   border-bottom: 2px solid darkred;
   line-height: 1.2em;
@@ -84,15 +84,11 @@ pre code {
 }
 
 .book .book-body .page-wrapper .page-inner section.normal h2 {
-  font-family: arno-pro, serif;
   font-weight: 700;
-  font-style: normal;
   font-size: 1em;
 }
 
 .book .book-body .page-wrapper .page-inner section.normal h3 {
-  font-family: arno-pro, serif;
-  font-weight: 400;
   font-style: italic;
   font-size: 1em;
   margin-bottom: 0em;
