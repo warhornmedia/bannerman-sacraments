@@ -14,6 +14,9 @@
 	font-family: calluna-sans, sans-serif;
 	font-weight: 400;
 	font-style: normal;
+	letter-spacing: 0;
+	font-size: 16px;
+	line-height: 1em;
 }
 
 .book .book-body .page-wrapper .page-inner section.normal p {
@@ -23,6 +26,14 @@
 
 p + p, h3 + p {
   text-indent: 1.2em;
+}
+
+b {
+  	font-variant-numeric: lining-nums;
+ 	-moz-font-feature-settings: "lnum";
+ 	-webkit-font-feature-settings: "lnum";
+ 	font-feature-settings: "lnum";
+	color: darkred;
 }
 
 /*
@@ -47,7 +58,7 @@ h1 > .header-section-number {
   text-transform: lowercase;
   font-variant: small-caps;
   letter-spacing: .1em;
-  color: darkred;
+  /*color: darkred;*/
 }
 
 p.caption {
