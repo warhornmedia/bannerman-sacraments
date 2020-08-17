@@ -1,9 +1,10 @@
 @import url("https://use.typekit.net/uix0fgg.css");
 
-.book .book-body p, .book .book-body h1, .book .book-body h2, .book .book-body h3, .book .book-body h4, .book .book-body h5, .book .book-body h6, .book .book-body ul, .book .book-body li, .book .book-body blockquote {
+.book .book-body .page-wrapper .page-inner section.normal {
 	font-family: calluna, serif;
 	font-weight: 400;
 	font-style: normal;
+	color: #222;
 	font-variant-ligatures: common-ligatures;
   	-moz-font-feature-settings: "liga", "clig";
   	-webkit-font-feature-settings: "liga", "clig";
@@ -29,10 +30,6 @@ p + p, h3 + p {
 }
 
 li.chapter b {
-  	font-variant-numeric: lining-nums;
- 	-moz-font-feature-settings: "lnum";
- 	-webkit-font-feature-settings: "lnum";
- 	font-feature-settings: "lnum";
 	color: #3f5061;
 }
 
@@ -59,17 +56,6 @@ h1 + p::first-line {
 }
 */
 
-h1 > .header-section-number {
-  display: block;
-  font-size: .8em;
-  padding-right: 0em;
-  /*font-family: calluna-sans, sans-serif;*/
-  text-transform: lowercase;
-  font-variant: small-caps;
-  letter-spacing: .1em;
-  /*color: #3f5061;*/
-}
-
 p.caption {
   color: #777;
   margin-top: 10px;
@@ -88,19 +74,28 @@ pre code {
 .book .book-body .page-wrapper .page-inner section.normal h1 {
   text-wrap: balanced;
   border-bottom: 2px solid #1aa9ab;
-  line-height: 1.2em;
+  line-height: 1em;
   padding-bottom: .5em;
-  /* all small caps workaround
+  /*all small caps*/
   text-transform: lowercase;
   font-variant: small-caps;
-  */
-  /* actual opentype all-small-caps code:
   font-variant-caps: all-small-caps;
   -moz-font-feature-settings: "smcp";
   -webkit-font-feature-settings: "smcp";
   font-feature-settings: "smcp";
-  */
-  /*letter-spacing:.1em;*/
+  letter-spacing:.1em;
+}
+
+h1 > .header-section-number {
+  display: block;
+  font-size: .67em;
+  padding-right: 0em;
+}
+
+h2 > .header-section-number {
+  display: block;
+  font-size: .67em;
+  padding-right: 0em;
 }
 
 .book .book-body .page-wrapper .page-inner section.normal h2 {
