@@ -47,6 +47,10 @@ body {
 	/*color:*/
 }
 
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h2, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h3, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h4, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h5, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h6 {
+	color: inherit;
+}
+
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h1 {
 	border-color: #0B494A;
 }
@@ -156,8 +160,9 @@ h1 > .header-section-number {
 }
 
 h2 {
-  font-weight: 700;
-	line-height: 1.4em;
+	font-weight: 700;
+	line-height: 1.5em;
+	letter-spacing: .6px;
 }
 
 .book .book-body .page-wrapper .page-inner section.normal h2 {
@@ -175,7 +180,7 @@ h2 > .header-section-number {
     -moz-font-feature-settings: "smcp";
     -webkit-font-feature-settings: "smcp";
     font-feature-settings: "smcp";*/
-  	letter-spacing:.1em;
+  	letter-spacing:.05em;
 }
 
 h2 > .header-section-number::before {
