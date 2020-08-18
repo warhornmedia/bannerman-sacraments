@@ -37,6 +37,10 @@ body {
 	/*color:*/
 }
 
+.book.color-theme-1 .book-body .page-wrapper .page-inner section.normal hr {
+	background-color: #afa790;
+}
+
 /*NIGHT*/
 .book.color-theme-2 .book-body {
 	/*background:*/
@@ -153,6 +157,7 @@ h1 > .header-section-number {
 
 h2 {
   font-weight: 700;
+	line-height: 1.4em;
 }
 
 .book .book-body .page-wrapper .page-inner section.normal h2 {
@@ -162,7 +167,6 @@ h2 {
 h2 > .header-section-number {
 	display: block;
 	padding-right: 0em;
-	font-weight: normal;
 	/*all small caps*/
   	text-transform: lowercase;
   	font-variant: small-caps;
@@ -180,6 +184,7 @@ h2 > .header-section-number::before {
 
 h3 {
   font-style: italic;
+  font-weight: 400;
 }
 
 .book .book-body .page-wrapper .page-inner section.normal h3 {
