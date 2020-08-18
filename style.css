@@ -1,5 +1,9 @@
 @import url("https://use.typekit.net/uix0fgg.css");
 
+html {
+	font-size: 70%;
+}
+
 body {
 	font-family: calluna-sans, sans-serif;
 }
@@ -133,6 +137,14 @@ h1 > .header-section-number {
   padding-right: 0em;
 }
 
+h2 {
+  font-weight: 700;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal h2 {
+	font-size: 1em;
+}
+
 h2 > .header-section-number {
 	display: block;
 	padding-right: 0em;
@@ -152,20 +164,21 @@ h2 > .header-section-number::before {
 	content: "Section ";
 }
 
+h3 {
+  font-style: italic;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal h3 {
+	font-size: 1em;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal h3 {
+	margin-bottom: 0;
+}
+
 h3 > .header-section-number {
   font-style: normal;
   font-weight: 600;
-}
-
-h2 {
-  font-weight: 700;
-  font-size: 1em;
-}
-
-h3 {
-  font-style: italic;
-  font-size: 1em;
-  margin-bottom: 0em;
 }
 
 /* Rule separating subheads; issue: also puts rule directly between h2 and h3—could probably be solved by proper use of descendant selectors...
