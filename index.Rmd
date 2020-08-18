@@ -24,14 +24,14 @@ description: "At the end of section 3 of James Bannerman's *Church of Christ* is
 cover-image: "images/cover.png"
 ---
 
-# [A Warhorn Historicals Book](https://historicals.warhornmedia.com/) {-}
+# [A Warhorn Classics Book](https://classics.warhornmedia.com/) {-}
 
 <center>
 
 ![](images/warhornlogo.png){ width=50% }
 
-Republished by Warhorn Historicals: 
-Making historical books available for free online in high quality, readable formats. 
+Republished by Warhorn Classics: 
+Making historic Christian books available for free online in high quality, readable formats. 
 
 </center>
 
