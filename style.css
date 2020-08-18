@@ -1,30 +1,60 @@
 @import url("https://use.typekit.net/uix0fgg.css");
 
-.book .book-header h1 {
+body {
 	font-family: calluna-sans, sans-serif;
-	font-weight: 300;
-	font-style: normal;
 }
 
-.book .book-body .page-wrapper .page-inner section.normal p, .book .book-body .page-wrapper .page-inner section.normal h1, .book .book-body .page-wrapper .page-inner section.normal h2, .book .book-body .page-wrapper .page-inner section.normal h3, .book .book-body .page-wrapper .page-inner section.normal h4, .book .book-body .page-wrapper .page-inner section.normal h5, .book .book-body .page-wrapper .page-inner section.normal h6, .book .book-body .page-wrapper .page-inner section.normal ul, .book .book-body .page-wrapper .page-inner section.normal ol, .book .book-body .page-wrapper .page-inner section.normal li, .book .book-body .page-wrapper .page-inner section.normal blockquote {
+.book.font-family-0 {
 	font-family: calluna, serif;
-	font-weight: 400;
-	font-style: normal;
-	color: #222;
 	font-variant-ligatures: common-ligatures;
   	-moz-font-feature-settings: "liga", "clig";
   	-webkit-font-feature-settings: "liga", "clig";
   	font-feature-settings: "liga", "clig";
 }
 
-.book .book-summary ul.summary li {
+.book.font-family-1 {
 	font-family: calluna-sans, sans-serif;
-	font-weight: 400;
+	font-variant-ligatures: common-ligatures;
+  	-moz-font-feature-settings: "liga", "clig";
+  	-webkit-font-feature-settings: "liga", "clig";
+  	font-feature-settings: "liga", "clig";
+}
+
+/*set normal color theme text and bg colors here*/
+.book .book-body {
+	
+}
+
+/*if you change normal color theme colors above, then set alternate themes below*/
+
+/*SEPIA*/
+.book.color-theme-1 .book-body {
+	/*background:*/
+	/*color:*/
+}
+
+/*NIGHT*/
+.book.color-theme-2 .book-body {
+	/*background:*/
+	/*color:*/
+}
+
+.book .book-header h1 {
+	font-family: calluna-sans, sans-serif;
+	font-weight: 300;
 	font-style: normal;
+}
+
+.book .book-header, .book .book-summary {
+	font-family: calluna-sans, sans-serif;
+}
+
+.book .book-summary {
 	letter-spacing: 0;
 	font-size: 16px;
 	line-height: 1em;
 }
+
 
 .book .book-summary ul.summary li.chapter ul li.chapter ul li.chapter {
 	font-style: italic;
@@ -40,7 +70,6 @@ p + p, h3 + p {
 }
 
 li.chapter b {
-	color: #3f5061;
 	font-style: normal;
 }
 
@@ -82,7 +111,7 @@ pre code {
   white-space: inherit;
 }
 
-.book .book-body .page-wrapper .page-inner section.normal h1 {
+h1 {
   text-wrap: balanced;
   border-bottom: 2px solid #1aa9ab;
   line-height: 1em;
@@ -128,12 +157,12 @@ h3 > .header-section-number {
   font-weight: 600;
 }
 
-.book .book-body .page-wrapper .page-inner section.normal h2 {
+h2 {
   font-weight: 700;
   font-size: 1em;
 }
 
-.book .book-body .page-wrapper .page-inner section.normal h3 {
+h3 {
   font-style: italic;
   font-size: 1em;
   margin-bottom: 0em;
