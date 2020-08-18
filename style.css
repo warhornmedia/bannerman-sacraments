@@ -47,11 +47,11 @@ body {
 	/*color:*/
 }
 
-.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h2, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h3, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h4, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h5, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h6 {
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h3, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h4, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h5, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h6 {
 	color: inherit;
 }
 
-.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h1 {
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h1, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h2 {
 	border-color: #0B494A;
 }
 
@@ -60,13 +60,13 @@ body {
 }
 
 .book .book-header h1 {
-	font-family: calluna-sans, sans-serif;
+	font-family: calluna, serif;
 	font-weight: 300;
 	font-style: normal;
 	border: none;
 	padding-bottom: 0;
-	text-transform: none;
-	font-variant: normal;
+	text-transform: lowercase;
+	font-variant: small-caps;
 	letter-spacing: .1em;
 }
 
@@ -163,6 +163,7 @@ h2 {
 	font-weight: 700;
 	line-height: 1.5em;
 	letter-spacing: .6px;
+	margin-top: 
 }
 
 .book .book-body .page-wrapper .page-inner section.normal h2 {
@@ -172,6 +173,7 @@ h2 {
 h2 > .header-section-number {
 	display: block;
 	padding-right: 0em;
+	margin-top: 2em;.book .book-header h1
 	/*all small caps*/
   	text-transform: lowercase;
   	font-variant: small-caps;
@@ -194,9 +196,6 @@ h3 {
 
 .book .book-body .page-wrapper .page-inner section.normal h3 {
 	font-size: 1em;
-}
-
-.book .book-body .page-wrapper .page-inner section.normal h3 {
 	margin-bottom: 0;
 }
 
