@@ -173,8 +173,8 @@ h2 {
 }
 
 /*sepia mode h2 rule*/
-.book-color-theme-1 h2 {
-	border-color: #704214;
+.book-color-theme-1 h2, .book-color-theme-2 h2 {
+	border-color: inherit;
 }
 
 /*night mode h2 rule*/
