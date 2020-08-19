@@ -168,6 +168,8 @@ h2 {
 	font-weight: 700;
 	line-height: 1.5em;
 	letter-spacing: .6px;
+	border-left: solid 2px #1aa9ab;
+	padding-left: .5em;
 }
 
 .book .book-body .page-wrapper .page-inner section.normal h2 {
@@ -178,8 +180,6 @@ h2 > .header-section-number {
 	display: block;
 	padding-right: 0em;
 	margin-top: 2em;
-	border-left: solid 2px #1aa9ab;
-	padding-left: .5em;
 	letter-spacing: .2px;
 	/*all small caps
   	text-transform: lowercase;
