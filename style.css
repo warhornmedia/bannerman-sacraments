@@ -84,6 +84,8 @@ body {
 	font-style: italic;
 }
 
+/*set paragraphs to no space between and indented first lines
+
 .book .book-body .page-wrapper .page-inner section.normal p {
   margin-top: 0em;
   margin-bottom: 0em;
@@ -92,6 +94,7 @@ body {
 p + p, h3 + p {
   text-indent: 1.2em;
 }
+*/
 
 li.chapter b {
 	font-style: normal;
@@ -106,19 +109,18 @@ li.chapter b {
 	color: #1aa9ab;
 }
 
-/*
-h1 + p::first-line {
-  /* all small caps workaround
-  text-transform: lowercase;
-  font-variant: small-caps;
-  * actual opentype all small caps code:
-  font-variant-caps: all-small-caps;
-  -moz-font-feature-settings: "smcp";
-  -webkit-font-feature-settings: "smcp";
-  font-feature-settings: "smcp";
-  letter-spacing:.1em;
+
+h1 + p::first-line, h2 + p::first-line {
+	/*all small caps workaround*/
+	text-transform: lowercase;
+	font-variant: small-caps;
+	letter-spacing:.1em;
+	/* actual opentype all small caps code:
+	font-variant-caps: all-small-caps;
+	-moz-font-feature-settings: "smcp";
+	-webkit-font-feature-settings: "smcp";
+	font-feature-settings: "smcp";*/
 }
-*/
 
 p.caption {
   color: #777;
@@ -135,28 +137,31 @@ pre code {
   white-space: inherit;
 }
 
+h1, h2 {
+	text-wrap: balanced;
+}
+
 h1 {
-  font-family: calluna, serif;
-  text-wrap: balanced;
-  border-bottom: 2px solid #1aa9ab;
-  line-height: 1em;
-  padding-bottom: .5em;
-  font-weight: 400;
-  /*all small caps*/
-  text-transform: lowercase;
-  font-variant: small-caps;
-  /*opentype asc*/
-  /*font-variant-caps: all-small-caps;
-  -moz-font-feature-settings: "smcp";
-  -webkit-font-feature-settings: "smcp";
-  font-feature-settings: "smcp";*/
-  letter-spacing:.1em;
+	font-family: calluna, serif;
+	border-bottom: 2px solid #1aa9ab;
+	line-height: 1em;
+	padding-bottom: .5em;
+	font-weight: 400;
+	/*all small caps*/
+	text-transform: lowercase;
+	font-variant: small-caps;
+	letter-spacing:.1em;
+	/*opentype asc*/
+	/*font-variant-caps: all-small-caps;
+	-moz-font-feature-settings: "smcp";
+	-webkit-font-feature-settings: "smcp";
+	font-feature-settings: "smcp";*/
 }
 
 h1 > .header-section-number {
-  display: block;
-  font-size: .67em;
-  padding-right: 0em;
+	display: block;
+	font-size: .67em;
+	padding-right: 0em;
 }
 
 h2 {
@@ -173,15 +178,18 @@ h2 > .header-section-number {
 	display: block;
 	padding-right: 0em;
 	margin-top: 2em;
-	/*all small caps*/
+	border-left: solid 2px #1aa9ab;
+	padding-left: .5em;
+	letter-spacing: .2px;
+	/*all small caps
   	text-transform: lowercase;
   	font-variant: small-caps;
-  	/*opentype asc*/
-    /*font-variant-caps: all-small-caps;
+	letter-spacing:.05em;*/
+  	/*opentype asc
+    font-variant-caps: all-small-caps;
     -moz-font-feature-settings: "smcp";
     -webkit-font-feature-settings: "smcp";
     font-feature-settings: "smcp";*/
-  	letter-spacing:.05em;
 }
 
 h2 > .header-section-number::before {
@@ -195,7 +203,7 @@ h3 {
 
 .book .book-body .page-wrapper .page-inner section.normal h3 {
 	font-size: 1em;
-	margin-bottom: 0;
+	/*margin-bottom: 0;*/
 }
 
 h3 > .header-section-number {
