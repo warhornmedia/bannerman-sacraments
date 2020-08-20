@@ -114,10 +114,10 @@ body {
     hyphenate-limit-zone: 8%;
 }
 
-p + p, h3 + p {
+/*p + p, h3 + p {
   text-indent: 1.2em;
-}
-*/
+}*/
+
 
 li.chapter b {
 	font-style: normal;
