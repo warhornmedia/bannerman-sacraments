@@ -59,6 +59,7 @@ body {
 	background-color: #0b494a;
 }
 
+/*set header and TOC to calluna sans*/
 .book .book-header h1 {
 	font-family: calluna, serif;
 	font-weight: 300;
@@ -84,6 +85,7 @@ body {
 	font-style: italic;
 }
 
+/*HYPHENS*/
 .book .book-body .page-wrapper .page-inner section.normal p {
 	/*set paragraphs to no space between and indented first lines
 	margin-top: 0em;
@@ -138,7 +140,7 @@ h1 + p::first-line, h2 + p::first-line {
 	text-transform: lowercase;
 	font-variant: small-caps;
 	letter-spacing:.05em;
-	/* actual opentype all small caps code:
+	/* actual opentype all small caps code
 	font-variant-caps: all-small-caps;
 	-moz-font-feature-settings: "smcp";
 	-webkit-font-feature-settings: "smcp";
