@@ -24,18 +24,7 @@ body {
   	font-feature-settings: "liga", "clig";
 }
 
-/*Make basic logo invisible*/
-
-.book .book-summary .summary li > a > img {
-	display:none;
-}
-
 /*WHITE*/
-
-.book .book-summary .summary li:first-child {
-	background-image: url("images/Warhorn Classics White-04.png");
-	width: 299px;
-}
 
 .book .book-body {
 	
@@ -44,12 +33,6 @@ body {
 /*if you change normal color theme colors above, then set alternate themes below*/
 
 /*SEPIA*/
-
-.book.color-theme-1 .book-summary .summary li:first-child {
-	background-image: url("images/Warhorn Classics Sepia-05.png");
-	width: 299px;
-	height: 90px;
-}
 
 .book.color-theme-1 .book-body {
 	/*background:*/
@@ -61,11 +44,6 @@ body {
 }
 
 /*NIGHT*/
-
-.book.color-theme-2 .book-summary .summary li:first-child {
-	background-image: url("images/Warhorn Classics Night-06.png");
-	width: 299px;
-}
 
 .book.color-theme-2 .book-body {
 	/*background:*/
