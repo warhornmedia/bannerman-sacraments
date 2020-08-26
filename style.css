@@ -48,6 +48,7 @@ body {
 .book.color-theme-1 .book-summary .summary li:first-child {
 	background-image: url("images/Warhorn Classics Sepia-05.png");
 	width: 299px;
+	height: 90px;
 }
 
 .book.color-theme-1 .book-body {
