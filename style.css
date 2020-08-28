@@ -30,6 +30,10 @@ body {
 	
 }
 
+.book .book-summary .summary li a img {
+	background-image: url("images/whitelogo.png")
+}
+
 /*if you change normal color theme colors above, then set alternate themes below*/
 
 /*SEPIA*/
