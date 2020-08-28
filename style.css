@@ -24,14 +24,28 @@ body {
   	font-feature-settings: "liga", "clig";
 }
 
+/*LOGO IMAGES FOR COLOR THEMES
+------------------------------------------*/
+
+.book .book-summary .summary li a img {
+	background-image: url("images/whitelogo.png");
+	background-size: contain;
+}
+
+.book.color-theme-1 .summary li a img {
+	background-image: url("images/sepialogo.png");
+	background-size: contain;
+}
+
+.book.color-theme-2 .summary li a img {
+	background-image: url("images/nightlogo.png");
+	background-size: contain;
+}
+
 /*WHITE*/
 
 .book .book-body {
 	
-}
-
-.book .book-summary .summary li a img {
-	background-image: url("images/whitelogo.png")
 }
 
 /*if you change normal color theme colors above, then set alternate themes below*/
