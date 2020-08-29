@@ -155,6 +155,12 @@ li.chapter b {
 	color: #1aa9ab;
 }
 
+p::first-letter {
+        font-variant-numeric: lining-nums;
+        -moz-font-feature-settings: "lnum";
+        -webkit-font-feature-settings: "lnum";
+        font-feature-settings: "lnum";
+}
 
 h1 + p::first-line, h2 + p::first-line {
 	/*all small caps workaround*/
