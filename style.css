@@ -155,7 +155,7 @@ li.chapter b {
 	color: #1aa9ab;
 }
 
-p::first-letter {
+.section p::first-letter {
         font-variant-numeric: lining-nums;
         -moz-font-feature-settings: "lnum";
         -webkit-font-feature-settings: "lnum";
