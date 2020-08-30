@@ -73,11 +73,7 @@ body {
 }
 
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h1, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h2 {
-	border-color: #0B494A;
-}
-
-.book.color-theme-2 .book-summary ul.summary li.active > a, .book.color-theme-2 .book-summary ul.summary li a:hover {
-	background-color: #0b494a;
+	border-color: #3f5061;
 }
 
 /*set header and TOC to calluna sans*/
@@ -151,7 +147,7 @@ li.chapter b {
 	/*font-weight: 600;*/
 }
 
-.book .book-body .page-wrapper .page-inner section.normal a {
+.book .book-body .page-wrapper .page-inner section.normal a, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal a {
 	color: #1aa9ab;
 }
 
@@ -231,7 +227,7 @@ h2 {
 
 /*night mode h2 rule*/
 .book-color-theme-2 h2 {
-	border-color: #0B494A;
+	border-color: #3f5061;
 }
 
 .book .book-body .page-wrapper .page-inner section.normal h2 {
@@ -286,6 +282,15 @@ h3 > .header-section-number {
 }
 */
 
+/*FOOTNOTES
+---------------------------*/
+
+.book .book-body .page-wrapper .page-inner section.normal .footnotes ol, .book .book-body .page-wrapper .page-inner section.normal .footnotes ul {
+    padding: 0 0 0 0em;
+    margin:0 0 .85em 1.5em;
+    text-indent: -1.5em;
+}
+
  /* Restart footnote numbers for each section. Following trail of solution to request asked here: https://community.rstudio.com/t/restart-footnote-numbering-in-each-chaptering/75628/4
 */
 
@@ -327,7 +332,9 @@ h3 > .header-section-number {
   }
 
   .footnotes p::before {
-    content: counter(fn-number) '. ';
+ 	content: counter(fn-number) '. ';
+	width: 1.5em;
+	float: left;
   }
   
 /* end Restart footnote numbers for each section. */
