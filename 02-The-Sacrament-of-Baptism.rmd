@@ -425,11 +425,13 @@ I do not wish to speak dogmatically on such a question as this, when Scripture h
 
 ::: {.poetry}
 "Oh when a mother meets on high \
-\ \ The babe she lost in infancy, \
+The babe she lost in infancy,
+
 Hath she not then for pains and fears, \
-\ \ The day of woe, the watchful night, \
+The day of woe, the watchful night,
+
 For all her sorrows, all her tears, \
-\ \ An over-payment of delight?"[^83]
+An over-payment of delight?"[^83]
 :::
 
 [^83]: Southey, *Curse of Kehama*.
