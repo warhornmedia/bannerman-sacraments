@@ -61,6 +61,10 @@ body {
 	background-color: #afa790;
 }
 
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h1, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h2 {
+	border-color: darkred;
+}
+
 /*NIGHT*/
 
 .book.color-theme-2 .book-body {
@@ -102,11 +106,8 @@ body {
 	font-style: italic;
 }
 
-/*HYPHENS*/
+/*HYPHENS
 .book .book-body .page-wrapper .page-inner section.normal p {
-	/*set paragraphs to no space between and indented first lines
-	margin-top: 0em;
-	margin-bottom: 0em;*/
 	orphans: 2;
 	widows: 2;
 	-webkit-hyphens: auto;
@@ -131,12 +132,20 @@ body {
     hyphenate-limit-lines: 2;
     hyphenate-limit-last: always;
     hyphenate-limit-zone: 8%;
-}
+}*/
 
+/* MAIN PARAGRAPH TEXT INDENTS
+-------------------------------------------*/
 /*p + p, h3 + p {
   text-indent: 1.2em;
 }*/
 
+/*set paragraphs to no space between and indented first lines
+.book .book-body .page-wrapper .page-inner section.normal p {	
+	margin-top: 0em;
+	margin-bottom: 0em;
+}*/
+/*----------------------------------------*/
 
 li.chapter b {
 	font-style: normal;
@@ -147,11 +156,18 @@ li.chapter b {
 	/*font-weight: 600;*/
 }
 
+/* LINK COLORS
+------------------------------------*/
 .book .book-body .page-wrapper .page-inner section.normal a, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal a {
 	color: #1aa9ab;
 }
 
-.section p::first-letter {
+/* SEPIA */
+.book.color-theme-1 .book-body .page-wrapper .page-inner section.normal a, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal a {
+	color: darkred;
+}
+
+.section p + p::first-letter {
         font-variant-numeric: lining-nums;
         -moz-font-feature-settings: "lnum";
         -webkit-font-feature-settings: "lnum";
@@ -268,6 +284,10 @@ h3 {
 h3 > .header-section-number {
   font-style: normal;
   font-weight: 600;
+}
+
+.smallcaps {
+	font-variant:small-caps;
 }
 
 /* Rule separating subheads; issue: also puts rule directly between h2 and h3—could probably be solved by proper use of descendant selectors...
