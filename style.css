@@ -61,7 +61,7 @@ body {
 	background-color: #afa790;
 }
 
-.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h1, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h2 {
+.book.color-theme-1 .book-body .page-wrapper .page-inner section.normal h1, .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal h2 {
 	border-color: darkred;
 }
 
