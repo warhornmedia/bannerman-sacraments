@@ -28,24 +28,24 @@ body {
 ------------------------------------------*/
 
 .book .book-summary .summary li a img {
-	background-image: url("images/whitelogo.png");
+	background-image: url("../images/whitelogo.png");
 	background-size: contain;
 }
 
 .book.color-theme-1 .summary li a img {
-	background-image: url("images/sepialogo.png");
+	background-image: url("../images/sepialogo.png");
 	background-size: contain;
 }
 
 .book.color-theme-2 .summary li a img {
-	background-image: url("images/nightlogo.png");
+	background-image: url("../images/nightlogo.png");
 	background-size: contain;
 }
 
 /*WHITE*/
 
 .book .book-body {
-	
+
 }
 
 /*if you change normal color theme colors above, then set alternate themes below*/
@@ -141,7 +141,7 @@ body {
 }*/
 
 /*set paragraphs to no space between and indented first lines
-.book .book-body .page-wrapper .page-inner section.normal p {	
+.book .book-body .page-wrapper .page-inner section.normal p {
 	margin-top: 0em;
 	margin-bottom: 0em;
 }*/
@@ -360,5 +360,5 @@ h3 > .header-section-number {
 	width: 1.5em;
 	float: left;
   }
-  
+
 /* end Restart footnote numbers for each section. */
