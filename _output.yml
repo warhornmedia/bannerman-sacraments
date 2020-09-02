@@ -28,8 +28,8 @@ bookdown::gitbook:
     after_body: reftagger.html
 bookdown::pdf_book:
   includes:
-    in_header: preamble.tex
-    before_body: before_body.tex
+    in_header: latex/preamble.tex
+    before_body: latex/before_body.tex
   latex_engine: xelatex
   citation_package: natbib
   keep_tex: yes
