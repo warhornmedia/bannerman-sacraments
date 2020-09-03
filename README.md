@@ -10,7 +10,4 @@ by James Bannerman
 Published: 1868.
 
 Available for your reading pleasure here:
-https://warhornmedia.github.iobeggarsborn.com/bannerman-sacraments/
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxOTM4MzA5MF19
--->
+https://warhornmedia.github.io/bannerman-sacraments/
