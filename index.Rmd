@@ -2,42 +2,26 @@
 title: "The Sacraments"
 author: "James Bannerman"
 date: "1868"
+description: "Nobody gets the Church like Bannerman, and this treatise on the Sacraments is mandatory reading today."
+params:
+  project: "bannerman-sacraments"
+  scans: "https://archive.org/details/churchofchristtr02bann/page/n11/mode/2up"
 site: bookdown::bookdown_site
 always_allow_html: yes
 documentclass: book
-github-repo: warhornmedia/bannerman-sacraments
-description: "At the end of section 3 of James Bannerman's *Church of Christ* is this masterful section on the sacraments."
-cover-image: "images/cover.png"
+cover-image: "cover.png"
+url: "https://warhornmedia.github.io/bannerman-sacraments"
 ---
 
-# [A Warhorn Classics Book](https://classics.warhornmedia.com/) {-}
-
-<center>
-![](images/warhornlogo.png){ width=50% }
-
-Republished by Warhorn Historicals: 
-
-Making historical books available for free online in high quality, readable formats. 
-</center>
-
-<h4>Downloads</h4>
-<a href = "https://warhornmedia.github.io/bannerman-sacraments/Bannerman-Sacraments.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Download PDF</a>
-
-<a href = "https://warhornmedia.github.io/bannerman-sacraments/Bannerman-Sacraments.epub"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Download ePub</a>
-
-We hope this book is a blessing to you. If it is, please [make a one-time or recurring contribution](https://warhornmedia.com/give) right now, sponsor a book from our upcoming list, or volunteer your proofreading or technical skills to help produce more content. Contact [Lucas Weeks](mailto:lucas@beggarsborn.com) to get involved.
-
-God bless,
-
-—The Warhorn Team
-
-Original scanned images of this book are available in two places for proofreading or checking for errors: [Archive.org](https://archive.org/details/churchofchristtr02bann/page/n11/mode/2up) and [Google Books](https://www.google.com/books/edition/_/Z_BBAAAAYAAJ?hl=en&gbpv=0).
-
-#### Cover {-}
-```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://www.warhornmedia.com'}
-knitr::include_graphics('images/cover.png', dpi = NA)
+```{r, include=FALSE} 
+if (!dir.exists("classics-template-files")) {
+download.file(url="https://github.com/warhornmedia/classics-template-files/archive/master.zip", destfile = "classics-template-files.zip")
+unzip(zipfile = "classics-template-files.zip", overwrite = TRUE)
+file.remove("classics-template-files.zip")
+file.rename("classics-template-files-master", "classics-template-files")
+}
 ```
 
-# Introduction {-}
+```{r, child='classics-template-files/rmds/classics-cover-page.Rmd'}
+```
 
-Nobody understands the Church like Bannerman, and this section on the Sacraments is mandatory reading today.
