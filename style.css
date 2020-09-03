@@ -207,7 +207,7 @@ h1, h2 {
 
 h1 {
 	font-family: calluna, serif;
-	border-bottom: 2px solid #1aa9ab;
+	border-bottom: .1em solid #1aa9ab;
 	line-height: 1em;
 	padding-bottom: .5em;
 	font-weight: 400;
@@ -232,7 +232,7 @@ h2 {
 	font-weight: 700;
 	line-height: 1.5em;
 	letter-spacing: .6px;
-	border-left: solid 2px #1aa9ab;
+	border-left: .1em solid #1aa9ab;
 	padding-left: .5em;
 }
 
