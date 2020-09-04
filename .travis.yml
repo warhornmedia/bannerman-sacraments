@@ -3,8 +3,13 @@ cache: packages
 pandoc_version: 2.10.1
 
 before_script:
+  - Rscript -e "download.file(url='https://github.com/warhornmedia/classics-template-files/archive/master.zip', destfile = 'classics-template-files.zip')"
+  - Rscript -e "unzip(zipfile = 'classics-template-files.zip', overwrite = TRUE)"
+  - Rscript -e "file.rename('classics-template-files-master', 'classics-template-files')"
+  - mv classics-template-files/*.sh .
   - chmod +x ./_build.sh
   - chmod +x ./_deploy.sh
+
 #  - sudo apt install calibre # install calibre to support mobi file creation
   - Rscript -e "install.packages('bookdown')" #installs very latest version of bookdown. Should be unnecessary most of the time.
 
