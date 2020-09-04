@@ -1,6 +1,7 @@
 language: r
 cache: packages
-pandoc_version: 2.10.1
+import: travis-ci/classics-template-files:bookbuild.yml@main
+
 
 before_script:
   - Rscript -e "download.file(url='https://github.com/warhornmedia/classics-template-files/archive/master.zip', destfile = 'classics-template-files.zip')"
