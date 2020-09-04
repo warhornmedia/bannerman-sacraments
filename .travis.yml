@@ -1,1 +1,2 @@
+language: r
 import: travis-ci/classics-template-files:bookbuild.yml@main
