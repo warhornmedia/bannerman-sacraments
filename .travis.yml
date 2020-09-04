@@ -1,7 +1,6 @@
 language: r
 cache: packages
-import: travis-ci/classics-template-files:bookbuild.yml@main
-
+import: travis-ci/classics-template-files:bookbuild.yml@master
 
 before_script:
   - Rscript -e "download.file(url='https://github.com/warhornmedia/classics-template-files/archive/master.zip', destfile = 'classics-template-files.zip')"
