@@ -4,13 +4,13 @@ author: "James Bannerman"
 date: "1868"
 description: "Nobody gets the Church like Bannerman, and this treatise on the Sacraments is mandatory reading today."
 params:
-  project: "bannerman-sacraments"
   scans: "https://archive.org/details/churchofchristtr02bann/page/n11/mode/2up"
-site: bookdown::bookdown_site
-always_allow_html: yes
-documentclass: book
+  build: "1"
 cover-image: "cover.png"
 url: "https://warhornmedia.github.io/bannerman-sacraments"
+always_allow_html: yes
+site: bookdown::bookdown_site
+documentclass: book
 ---
 
 ```{r, include=FALSE} 

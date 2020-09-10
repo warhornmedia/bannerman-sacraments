@@ -1,6 +1,6 @@
 bookdown::gitbook:
   css: classics-template-files/css/style.css
-  split_by: section
+  split_by: rmd
   config:
     toc:
       scroll_highlight: yes
