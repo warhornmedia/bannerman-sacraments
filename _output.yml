@@ -25,7 +25,7 @@ bookdown::gitbook:
       all: no
     download: ["pdf", "epub", "mobi"]
   includes:
-    after_body: classics-template-files/html/reftagger.html
+    after_body: classics-template-files/html/after_body.html
 bookdown::pdf_book:
   includes:
     in_header: classics-template-files/latex/preamble.tex
