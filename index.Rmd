@@ -5,7 +5,7 @@ date: "1868"
 description: "Nobody gets the Church like Bannerman, and this treatise on the Sacraments is mandatory reading today."
 params:
   scans: "https://archive.org/details/churchofchristtr02bann/page/n11/mode/2up"
-  build: "1"
+  build: "2"
 cover-image: "cover.png"
 url: "https://warhornmedia.github.io/bannerman-sacraments"
 always_allow_html: yes
