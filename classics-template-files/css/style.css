@@ -364,6 +364,9 @@ pre code {
 .book .book-body .page-wrapper .page-inner section.normal .footnotes ol, .book .book-body .page-wrapper .page-inner section.normal .footnotes ul {
     padding: 0 0 0 0em;
     margin:0 0 .85em 1.5em;
+}
+
+.footnotes li p:first-child {
     text-indent: -1.5em;
 }
 
@@ -371,8 +374,7 @@ pre code {
 */
 
   /* don't show the wrong footnote calls */
-  .footnote-ref sup,
-  .footnoteRef sup {
+  .footnote-ref sup, .footnoteRef sup {
     display: none;
   }
 
@@ -381,14 +383,12 @@ pre code {
     counter-reset: fn-call;
   }
 
-  .footnote-ref,
-  .footnoteRef {
+  .footnote-ref, .footnoteRef {
     counter-increment: fn-call;
   }
 
   /* generate new footnote calls */
-  .footnote-ref::after,
-  .footnoteRef::after {
+  .footnote-ref::after, .footnoteRef::after {
     content: counter(fn-call);
     position: relative;
     top: -.5em;
@@ -407,7 +407,7 @@ pre code {
     counter-increment: fn-number;
   }
 
-  .footnotes p::before {
+  .footnotes li p:first-child::before {
  	content: counter(fn-number) '. ';
 	width: 1.5em;
 	float: left;
