@@ -7,7 +7,7 @@ params:
   scans: "https://archive.org/details/churchofchristtr02bann/page/n11/mode/2up"
   build: "3"
 cover-image: "cover.png"
-url: "https://warhornmedia.github.io/bannerman-sacraments"
+url: "https://warhornmedia.github.io/bannerman-sacraments/"
 output: 
   bookdown::gitbook:
     config:
