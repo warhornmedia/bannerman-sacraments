@@ -1,5 +1,6 @@
 bookdown::gitbook:
   css: classics-template-files/css/style.css
+  css: https://fontlibrary.org/face/symbola
   split_by: rmd
   config:
     fontsettings:
