@@ -132,6 +132,13 @@
 \bibliographystyle{plainnat}
 
 \title{The Sacraments}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{An Excerpt from \emph{The Church of Christ}}
 \author{James Bannerman}
 \date{1868}
 
