@@ -17,6 +17,7 @@ bookdown::gitbook:
       all: no
     download: ["pdf", "epub", "mobi"]
   includes:
+    in_header: classics-template-files/html/in-header.html
     after_body: classics-template-files/html/after_body.html
 bookdown::pdf_book:
   includes:
