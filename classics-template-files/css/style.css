@@ -227,6 +227,7 @@ section#section-.normal {
 
 #about-this-book h1 {
     font-family: inherit;
+    font-style: normal;
     font-weight: 700;
     letter-spacing: .01em;
     text-transform: none;
@@ -291,6 +292,7 @@ a.anchor-section::before {
 
 h1.hasAnchor a.anchor-section {
     font-size: .7em;
+    transform: translateY(.4em);
 }
 
 /*--*/
@@ -364,7 +366,7 @@ h2 .header-section-number::before {
 	content: "Section ";
 }
 
-h3, h4 {
+h3 {
   font-style: italic;
   font-weight: 400;
 }
@@ -387,6 +389,7 @@ h3 .header-section-number {
 .book .book-body .page-wrapper .page-inner section.normal > div ~ div h1 {
     font-family: inherit;
     font-size: 1em;
+    line-height: inherit;
     font-style: italic;
     font-weight: 400;
     border: none;
