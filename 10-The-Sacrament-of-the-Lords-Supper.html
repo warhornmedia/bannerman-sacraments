@@ -263,9 +263,9 @@ pp. 91-120.<a href="10-The-Sacrament-of-the-Lords-Supper.html#fnref154" class="
 
 <!-- make it so en dashes never break -->
 <script>
-    $(window).bind("load", $("h1, h2, h3, h4, h5, h6, p, li, blockquote").html(function(_, html) {
-        return  html.replace(/(–.)/g, '<span class="nobreak">$1</span>')
-    }));
+    let script = document.createElement('script');
+    script.src = 'css/styling.js';
+    document.head.appendChild(script);
 </script>
             </section>
 
