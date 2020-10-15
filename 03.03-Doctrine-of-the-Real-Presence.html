@@ -33,7 +33,7 @@
   
 <link rel="prev" href="03.02-Transubstantiation.html"/>
 <link rel="next" href="03.04-The-Sacrifice-of-the-Mass.html"/>
-<script src="libs/header-attrs-2.4.5/header-attrs.js"></script>
+<script src="libs/header-attrs-2.4.6/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -242,15 +242,14 @@
    });
 </script>
 
-<!-- make it so en dashes never break, ORIGINAL script using .nobreak CSS span 
+<!-- make it so en dashes never break, ORIGINAL script using .nobreak CSS span -->
 <script>
-    $(window).load(function() {
+    $(document).ready(function() {
         $("body").html(function(_, html) {
             return  html.replace(/(–.)(?![^<^>]+>)/g, '<span class="nobreak">$1</span>')
         });
     });
 </script>
--->
 
 <!-- en dash script using HTML word-joiner entity --
 <script>
