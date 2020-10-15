@@ -255,7 +255,7 @@
 <!-- make it so en dashes never break, ORIGINAL script using .nobreak CSS span -->
 <script>
     $(window).load(function() {
-        $("body").html(function(_, html) {
+        $("section.normal").html(function(_, html) {
             return  html.replace(/(–.)(?!([^<^>]+>)|(\d*<\/a>))/g, '<span class="nobreak">$1</span>')
         });
     });
