@@ -263,7 +263,7 @@ pp. 91-120.<a href="03-Unscriptural-or-Defective-Views.html#fnref21" class="foo
 <script>
     $(window).load(function() {
         $("body").html(function(_, html) {
-        return  html.replace(/(–.)/g, '<span class="nobreak">$1</span>')
+            return  html.replace(/(–.)(?!\d*")/g, '<span class="smallcaps">$1</span>')
         });
     });
 </script>
