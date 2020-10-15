@@ -252,7 +252,15 @@
    });
 </script>
 
-<!-- make it so en dashes never break, ORIGINAL script using .nobreak CSS span -->
+<script>
+    $(window).load(function() {
+        $("section.normal").html(function(_, html) {
+            return  html.replace(/(Præstat)/g, '<span class="nobreak">$1</span>')
+        });
+    });
+</script>
+
+<!-- make it so en dashes never break, ORIGINAL script using .nobreak CSS span
 <script>
     $(window).load(function() {
         $("section.normal").html(function(_, html) {
@@ -260,6 +268,7 @@
         });
     });
 </script>
+-->
 
 <!-- en dash script using HTML word-joiner entity --
 <script>
