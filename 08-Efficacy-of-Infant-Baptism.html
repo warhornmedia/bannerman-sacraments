@@ -251,11 +251,20 @@ Aus Gottes Hand in Gottes Hand.<br />
    });
 </script>
 
-<!-- make it so en dashes never break -->
+<!-- make it so en dashes never break ORIGINAL 
 <script>
     $(window).load(function() {
         $("body").html(function(_, html) {
             return  html.replace(/(–.)(?![^<^>]+>)/g, '<span class="nobreak">$1</span>')
+        });
+    });
+</script>
+-->
+<!-- NEW -->
+<script>
+    $(window).load(function() {
+        $("body").html(function(_, html) {
+            return  html.replace(/(–)(.)(?![^<^>]+>)/g, '$1&#8288;$2')
         });
     });
 </script>
