@@ -55,8 +55,11 @@
 <script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 <!-- include Adobe Fonts web project stylesheet -->
 <link rel="stylesheet" href="https://use.typekit.net/uix0fgg.css">
-<script>
-    $("section.normal").html(function(_, html) {
+
+<!-- make sure en dashes don't break -->
+<script language="javascript" type="text/javascript">
+    window.onload = function() {
+        $("section.normal").html(function(_, html) {
             return  html.replace(/(–.)(?!([^<^>]+>)|(\d*<\/a>))/g, '<span class="nobreak">$1</span>')
         });
 </script>
