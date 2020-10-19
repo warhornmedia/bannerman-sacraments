@@ -67,6 +67,12 @@ NIGHT THEME
   	font-feature-settings: "liga", "clig";
 }
 
+.poetry {
+    margin-right: 1em;
+    margin-left: 2em;
+    font-style: italic;
+}
+
 /* opening line style */
 h1 + p::first-line, h2 + p::first-line {
 	/*all small caps workaround*/
@@ -339,8 +345,10 @@ h2 {
 	font-weight: 700;
 	line-height: 1.5em;
 	letter-spacing: .6px;
-	border-left: .15em solid #1aa9ab;
-	padding-left: .5em;
+    position: relative;
+    left: -1.2em;
+	border-left: .2em solid #1aa9ab;
+	padding-left: 1em;
 }
 
 /*sepia mode h2 rule*/
