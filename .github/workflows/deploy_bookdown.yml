@@ -1,0 +1,103 @@
+on:
+  push:
+     branches:
+       - master
+
+name: renderbook
+
+jobs:
+  bookdown:
+    name: Render-Book
+    runs-on: macOS-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: r-lib/actions/setup-r@v1
+
+      - name: Install Pandoc
+        uses: r-lib/actions/setup-pandoc@v1
+        with:
+          pandoc-version: '2.10.1'
+
+      - name: Install TinyTeX
+        uses: r-lib/actions/setup-tinytex@v1
+        env:
+          # install full prebuilt version
+          TINYTEX_INSTALLER: TinyTeX
+
+      - name: Install rmarkdown & bookdown
+        run: Rscript -e 'install.packages(c("rmarkdown","bookdown"))'
+
+#      - name: Query dependencies
+#        run: |
+#          install.packages('remotes')
+#          saveRDS(remotes::dev_package_deps(dependencies = TRUE), ".github/depends.Rds", version = 2)
+#          writeLines(sprintf("R-%i.%i", getRversion()$major, getRversion()$minor), ".github/R-version")
+#        shell: Rscript {0}
+
+#      - name: Install OS dependencies
+#        run: |
+#          brew update
+#          brew install --cask xquartz
+#          brew install --cask calibre
+
+#      - name: Install phamtomJS for webshot
+#        run: |
+#          remotes::install_cran("webshot")
+#          webshot::install_phantomjs()
+#        shell: Rscript {0}
+
+#      - name: Install R dependencies for bookdown
+#        run: |
+#          remotes::install_deps(dependencies = TRUE)
+#        shell: Rscript {0}
+
+#      - name: Install bookdown package
+#        run: xfun::install_dir(".")
+#        shell: Rscript {0}
+
+#      - name: Session info
+#        run: |
+#          options(width = 100)
+#          remotes::install_cran("sessioninfo")
+#          pkgs <- installed.packages()[, "Package"]
+#          sessioninfo::session_info(pkgs, include_base = TRUE)
+#          rmarkdown::find_pandoc()
+#        shell: Rscript {0}
+
+      - name: Clone template files
+        run: git clone https://github.com/warhornmedia/classics-template-files.git
+
+      - name: Run Build Script
+        run: |
+          mv classics-template-files/scripts/*.sh .
+          chmod +x ./_buildGHA.sh
+          ./_buildGHA.sh
+
+#      - name: Install fonts
+#        run: |
+#          unzip classics-template-files/fonts/font1.zip
+#          unzip classics-template-files/fonts/font2.zip
+#          sudo cp -vf Calluna/Calluna-Regular.otf /Library/Fonts
+#          sudo cp -vf LiberationSerif-Regular.ttf /Library/Fonts
+#          sudo cp -vf LiberationSerif-BoldItalic.ttf /Library/Fonts
+#          sudo cp -vf LiberationSerif-Bold.ttf /Library/Fonts
+#          sudo cp -vf LiberationSerif-Italic.ttf /Library/Fonts
+
+#      - name: Render Book
+#        run: |
+#          Rscript -e "bookdown::render_book('index.Rmd', 'bookdown::gitbook')"
+#          Rscript -e "bookdown::render_book('index.Rmd', 'bookdown::pdf_book')"
+#          Rscript -e "bookdown::render_book('index.Rmd', 'bookdown::epub_book')"
+
+#      - uses: actions/upload-artifact@v1
+#        with:
+#          name: _book
+#          path: _book/
+
+      - name: deploy to github pages
+        uses: JamesIves/github-pages-deploy-action@4.0.0
+        with:
+          TOKEN: ${{ secrets.GH_PAT }} # https://github.com/settings/tokens
+          BRANCH: gh-pages # The branch the action should deploy to
+          FOLDER: _book # The folder the action should deploy
+          CLEAN: true # Automatically remove deleted files from the deploy branch
