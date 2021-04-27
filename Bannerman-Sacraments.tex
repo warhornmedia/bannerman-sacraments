@@ -73,6 +73,17 @@
 % media settings
 \usepackage[paperwidth=5.5in, paperheight=8.5in]{geometry}
 
+% define link colors
+\usepackage{hyperref}
+\definecolor{WarhornTeal}{RGB}{26, 169, 171}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=WarhornTeal,
+    filecolor=WarhornTeal,
+    urlcolor=WarhornTeal,
+}
+
+% Not sure what this does
 \usepackage{booktabs}
 \usepackage{amsthm}
 \makeatletter
@@ -81,6 +92,7 @@
   \thm@postskip=\thm@preskip
 }
 
+% Insert book cover first and format title page after that?
 \usepackage{titling}
 \usepackage{pdfpages}
 \IfFileExists{./cover.pdf}{
@@ -101,8 +113,10 @@
 }
 \clearpage\pagenumbering{roman}
 
+% poetry styling
 \newenvironment{poetry}[0]{\par\leftskip=2em\rightskip=2em}{\par\medskip}
 
+% specify fonts
 \setmainfont{Calluna}
 \newfontfamily\greekfont[Script=Greek]{LiberationSerif}
 
@@ -135,8 +149,6 @@
 \ifluatex
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
-\usepackage[]{natbib}
-\bibliographystyle{plainnat}
 
 \title{The Sacraments}
 \usepackage{etoolbox}
