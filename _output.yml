@@ -24,6 +24,5 @@ bookdown::pdf_book:
     in_header: classics-template-files/latex/preamble.tex
     before_body: classics-template-files/latex/before_body.tex
   latex_engine: xelatex
-  citation_package: natbib
   keep_tex: yes
 bookdown::epub_book: default
