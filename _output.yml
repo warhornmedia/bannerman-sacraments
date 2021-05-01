@@ -15,7 +15,7 @@ bookdown::gitbook:
       instapaper: no
       vk: no
       all: no
-    download: ["pdf", "epub", "mobi", "azw3"]
+    download: ["pdf", "epub", "mobi"]
   includes:
     in_header: classics-template-files/html/in_header.html
     after_body: classics-template-files/html/after_body.html
