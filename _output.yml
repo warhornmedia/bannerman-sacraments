@@ -25,5 +25,4 @@ bookdown::pdf_book:
     before_body: classics-template-files/latex/before_body.tex
   latex_engine: xelatex
   keep_tex: yes
-bookdown::epub_book:
-  epub_version: epub3
+bookdown::epub_book: default
