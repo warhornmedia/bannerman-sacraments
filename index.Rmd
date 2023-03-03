@@ -1,14 +1,16 @@
 --- 
-title: "Empty Book"
-author: "Warhorn Classics"
-date: "2020"
-description: "This empty book is a template for starting new Warhorn Classics book projects."
+title: "The Sacraments"
+subtitle: "An Excerpt from *The Church of Christ*"
+author: "James Bannerman"
+date: "1868"
+description: "Nobody gets the Church like Bannerman, and this treatise on the Sacraments is mandatory reading today."
+lang: en
 params:
-  pubinfo: "Originally published as “This Is An Empty Book” in *Warhorn Classics Anthology* (Bayly, McNeilly, Weeks, et al, 2020), 219–283."
-  scans: "https://archive.org"
-  build: "0"
-cover-image: "cover.jpg"
-url: "https://warhornmedia.github.io/classics-empty-book/"
+  pubinfo: "Originally published as “Positive Divine Institutions in addition to the Ordinary Public Worship of the Lord’s Day, or the Sacraments,” pt.\ 3, div.\ 2, subdiv.\ 4, in *The Church of Christ: A Treatise on the Nature, Powers, Ordinances, Discipline, and Government of the Christian Church*, ed. D.\ Douglas Bannerman, vol.\ 2 (Edinburgh: T.\ &\ T.\ Clark, 1868), 1–185."
+  scans: "https://archive.org/details/churchofchristtr02bann/page/n11/mode/2up"
+  build: "5"
+cover-image: "cover.png"
+url: "https://warhornmedia.github.io/bannerman-sacraments/"
 output: 
   bookdown::gitbook:
     config:
@@ -16,10 +18,11 @@ output:
         scroll_highlight: yes
         before: |
           <li><a href="https://classics.warhornmedia.com/"><img src="classics-template-files/images/warhornlogo.png" width="260"></a></li>
-          <li><a href="./">Empty Book — Warhorn Classics</a></li>
+          <li><a href="./">The Sacraments — James Bannerman</a></li>
         after: |
-      edit: https://github.com/warhornmedia/classics-empty-book/edit/master/%s
+      edit: https://github.com/warhornmedia/bannerman-sacraments/edit/master/%s
 documentclass: book
+colorlinks: true
 always_allow_html: yes
 site: bookdown::bookdown_site
 ---

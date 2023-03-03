@@ -15,14 +15,19 @@ bookdown::gitbook:
       instapaper: no
       vk: no
       all: no
-    download: ["pdf", "epub", "mobi"]
+    download: ["pdf", "epub", "mobi", "azw3", "kfx"]
   includes:
     in_header: classics-template-files/html/in_header.html
     after_body: classics-template-files/html/after_body.html
+  pandoc_args:
+    - --lua-filter=classics-template-files/filters/filter_reader_wrap_section_intro.lua
+    - --lua-filter=classics-template-files/filters/filter_reader_mark_content.lua
 bookdown::pdf_book:
   includes:
     in_header: classics-template-files/latex/preamble.tex
     before_body: classics-template-files/latex/before_body.tex
+  pandoc_args:
+    - --lua-filter=classics-template-files/filters/filter_unnumbered_content.lua
   latex_engine: xelatex
   keep_tex: yes
 bookdown::epub_book: default
